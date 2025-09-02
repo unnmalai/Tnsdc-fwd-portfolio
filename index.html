@@ -1,0 +1,196 @@
+<header>
+
+  <h1>My Portfolio</h1>
+
+  <nav>
+
+    <ul>
+
+      <li><a href="#about">About</a></li>
+
+      <li><a href="#projects">Projects</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+  </nav>
+
+</header>
+
+<section id="about">
+
+  <h2>About Me</h2>
+
+  <p>Hello! I am a web developer passionate about HTML, CSS, and JavaScript.</p>
+
+</section>
+
+<section id="projects">
+
+  <h2>Projects</h2>
+
+  <div class="project-card">
+
+    <h3>Portfolio Website</h3>
+
+    <p>This is my personal portfolio built with HTML, CSS, and JS.</p>
+
+  </div>
+
+  <div class="project-card">
+
+    <h3>To-Do List App</h3>
+
+    <p>A simple task manager with add and delete features.</p>
+
+  </div>
+
+</section>
+
+<section id="contact">
+
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+
+    <input type="text" placeholder="dhanalakshmi" required>
+
+    <input type="email" placeholder="dhana1234@gmail.com" required>
+
+    <textarea placeholder="welcome to my portfolio" required></textarea>
+
+    <button type="submit">Send</button>
+
+  </form>
+
+</section>
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: Arial, sans-serif;
+
+}
+
+body {
+
+  background: #f4f4f4;
+
+  color: #333;
+
+  line-height: 1.6;
+
+  text-align: center;
+
+}
+
+header {
+
+  background: #333;
+
+  color: #fff;
+
+  padding: 15px 0;
+
+}
+
+header h1 {
+
+  margin-bottom: 10px;
+
+}
+
+nav ul {
+
+  list-style: none;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+nav ul li {
+
+  margin: 0 15px;
+
+}
+
+nav ul li a {
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+}
+
+section {
+
+  padding: 30px;
+
+}
+
+.project-card {
+
+  background: #fff;
+
+  margin: 15px auto;
+
+  padding: 20px;
+
+  width: 80%;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+}
+
+form input, form textarea {
+
+  width: 80%;
+
+  margin: 10px 0;
+
+  padding: 10px;
+
+  font-size: 16px;
+
+}
+
+form button {
+
+  background: #333;
+
+  color: #fff;
+
+  padding: 10px 20px;
+
+  border: none;
+
+  cursor: pointer;
+
+}
+
+form button:hover {
+
+  background: #555;
+
+}
+document.getElementById("contactForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    alert("Thank you for contacting me!");
+
+    this.reset();
+
+});
